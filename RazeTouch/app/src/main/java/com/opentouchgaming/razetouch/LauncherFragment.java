@@ -223,11 +223,21 @@ public class LauncherFragment extends MainFragment
                 audioEngine = audioBackendOverride;
             }
         }
-
+		File razeRes = new File(AppInfo.getResFiles() + "raze.pk3");
+		if (!razeRes.exists())
+		{
         Utils.copyAsset(getActivity(), "raze.pk3", AppInfo.getResFiles());
+		}
+		File raze15Res = new File(AppInfo.getResFiles() + "raze_1.5.pk3");
+		if (!raze15Res.exists())
+		{
         Utils.copyAsset(getActivity(), "raze_1.5.pk3", AppInfo.getResFiles());
+		}
+		File razeDevRes = new File(AppInfo.getResFiles() + "raze_dev.pk3");
+		if (!razeDevRes.exists())
+		{
         Utils.copyAsset(getActivity(), "raze_dev.pk3", AppInfo.getResFiles());
-
+		}
         File sf2 = new File(AppInfo.getAppDirectory() + "/EDUKE32/soundfont.sf2");
         if (!sf2.exists())
         {
