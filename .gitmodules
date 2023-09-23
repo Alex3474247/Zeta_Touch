@@ -1,10 +1,10 @@
 [submodule "SAFFAL"]
 	path = SAFFAL
-	url = https://github.com/emileb/SAFFAL.git
+	url = https://github.com/Alex3474247/SAFFAL.git
 
 [submodule "AndroidCore_OpenTouch"]
 	path = AndroidCore_OpenTouch
-	url = https://github.com/emileb/AndroidCore_OpenTouch.git
+	url = https://github.com/Alex3474247/AndroidCore_OpenTouch.git
 
 [submodule "RazeTouch/app/src/main/jni/AudioLibs_OpenTouch"]
 	path = RazeTouch/app/src/main/jni/AudioLibs_OpenTouch
@@ -20,15 +20,15 @@
 
 [submodule "RazeTouch/app/src/main/jni/Raze"]
 	path = RazeTouch/app/src/main/jni/Raze
-	url = https://github.com/emileb/Raze.git
+	url = https://github.com/Alex3474247/Raze.git
 
 [submodule "RazeTouch/app/src/main/jni/Raze_1.5"]
 	path = RazeTouch/app/src/main/jni/Raze_1.5
-	url = https://github.com/emileb/Raze.git
+	url = https://github.com/Alex3474247/Raze.git
 
 [submodule "RazeTouch/app/src/main/jni/Raze_dev"]
 	path = RazeTouch/app/src/main/jni/Raze_dev
-	url = https://github.com/emileb/Raze.git
+	url = https://github.com/Alex3474247/Raze.git
 	
 [submodule "RazeTouch/app/src/main/jni/SDL2_OpenTouch"]
 	path = RazeTouch/app/src/main/jni/SDL2_OpenTouch
@@ -41,12 +41,12 @@
 
 [submodule "RazeTouch/app/src/main/jni/eduke32_mobile"]
 	path = RazeTouch/app/src/main/jni/eduke32_mobile
-	url = https://github.com/emileb/eduke32_mobile.git
+	url = https://github.com/Alex3474247/eduke32_mobile.git
 	branch = fury-2.0_mobile
 
 [submodule "RazeTouch/app/src/main/jni/eduke32_mobile_dev"]
 	path = RazeTouch/app/src/main/jni/eduke32_mobile_dev
-	url = https://github.com/emileb/eduke32_mobile.git
+	url = https://github.com/Alex3474247/eduke32_mobile.git
 	branch = master_mobile
 
 [submodule "RazeTouch/app/src/main/jni/gl4es"]
@@ -56,6 +56,6 @@
 
 [submodule "RazeTouch/app/src/main/jni/AWOL"]
 	path = RazeTouch/app/src/main/jni/AWOL
-	url = https://github.com/emileb/eduke32_mobile.git
+	url = https://github.com/Alex3474247/eduke32_mobile.git
 	branch = awol
 	
