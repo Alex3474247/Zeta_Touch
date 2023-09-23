@@ -4,14 +4,31 @@ apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 31
-
+    ndkVersion '21.4.7075529'
+    
+    signingConfigs {
+        debug {
+            storeFile file('../../MyKeyStore.jks')
+            storePassword '123456'
+            keyAlias 'key0'
+            keyPassword '123456'
+        }
+        release {
+            storeFile file('../../MyKeyStore.jks')
+            storePassword '123456'
+            keyAlias 'key0'
+            keyPassword '123456'
+        }
+    }
     defaultConfig {
         applicationId "com.opentouchgaming.razetouch"
         minSdkVersion 21
         targetSdkVersion 27 // WARNING upping this will break HTTP access needed for version checking
         versionCode 23
         versionName "3.1"
-
+     ndk {
+      abiFilters 'arm64-v8a', 'armeabi-v7a'
+     }
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -19,6 +36,7 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
     }
 
@@ -33,11 +51,11 @@ android {
 
     externalNativeBuild {
         ndkBuild {
-            path file('src/main/jni/Android_dummy.mk')
+            path file('src/main/jni/Android.mk')
         }
     }
 
-    tasks.whenTaskAdded { task ->
+    /*tasks.whenTaskAdded { task ->
         if (task.name.equals("compileDebugNdk")) {
             task.enabled = false
         }
@@ -47,7 +65,7 @@ android {
         if (task.name.equals("compileReleaseNdk")) {
             task.enabled = false
         }
-    }
+    }*/
 
     // Add this block and enable/disable the parameters as follows
     bundle {
@@ -73,6 +91,7 @@ android {
 }
 
 android {
+   
     lintOptions {
         checkReleaseBuilds false
     }

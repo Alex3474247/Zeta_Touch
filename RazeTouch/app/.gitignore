@@ -1,5 +1,7 @@
 /build
+/debug
 /release
-src/main/assets
 src/main/obj
 src/main/libs
+../../.androidide
+../.androidide
